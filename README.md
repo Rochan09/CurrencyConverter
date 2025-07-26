@@ -31,9 +31,17 @@ A simple and responsive currency converter built using **HTML**, **CSS**, and **
 - **CSS3**
 - **JavaScript (ES6)**
 - **Exchange Rate API**  
-  (e.g., `https://api.exchangerate.host/latest` or `https://open.er-api.com/v6/latest/USD`)
+  [`https://api.exchangerate-api.com/v4/latest/USD`](https://api.exchangerate-api.com/v4/latest/USD)
 
 ---
 
 ## 📂 Folder Structure
+
+```plaintext
+project-folder/
+├── index.html
+├── style.css
+├── script.js
+├── screenshot.png
+└── README.md
 
