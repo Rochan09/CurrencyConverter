@@ -10,7 +10,7 @@ A simple and responsive currency converter built using **HTML**, **CSS**, and **
 
 ## 🌍 Live Demo
 
-🔗 [View Live Project](https://your-live-demo-link.com)
+🔗 [View Live Project](https://currencycircus.netlify.app/)
 
 ---
 
