@@ -4,7 +4,7 @@ A simple and responsive currency converter built using **HTML**, **CSS**, and **
 
 ## 📸 Preview
 
-![Currency Converter Screenshot](./screenshot.png) <!-- Replace with your actual image path -->
+![Currency Converter Screenshot](./screenshot.png) 
 
 ---
 
