@@ -19,7 +19,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
     text-align: center;
-    width: 650px; /* Increased width for long currency names */
+    width: 400px; /* Reduced width for a more compact card */
     max-width: 98vw;
 }
 
@@ -31,49 +31,53 @@ h1 {
 }
 
 
+
+/* Arrange items vertically in the card */
 .input-group {
     display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
     margin-bottom: 20px;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
+
 input, select {
-    flex: 1;
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    min-width: 180px; /* Added for wider dropdowns */
-    max-width: 100%;
     box-sizing: border-box;
 }
 
+
 input[type="number"] {
-    flex: 0 0 90px; /* Fixed width for amount input */
-    min-width: 70px;
-    max-width: 120px;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
 }
 
+
 select {
-    flex: 1 1 220px;
-    min-width: 220px; /* Wider for long names */
-    max-width: 300px;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
 }
+
 
 button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 0;
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 button:hover {
@@ -88,18 +92,31 @@ button:hover {
     color: #333;
 }
 
+
 @media (max-width: 700px) {
     .converter {
         width: 98vw;
-        padding: 18px 4vw;
+        padding: 10px 2vw;
+        border-radius: 7px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+    }
+    h1 {
+        font-size: 20px;
+        margin-bottom: 14px;
     }
     .input-group {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
+        gap: 10px;
     }
-    input[type="number"], select {
+    input, select, button {
+        font-size: 15px;
+        padding: 8px;
+    }
+    input[type="number"], select, button {
         max-width: 100%;
         min-width: 0;
+    }
+    #result {
+        font-size: 15px;
+        margin-top: 10px;
     }
 }
