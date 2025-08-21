@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="converter">
-        <h1>Currency Converter</h1>
+    <!-- Removed background-animated and blobs for a cleaner background -->
+    <div class="converter glass-card">
+        <h1><span class="icon">💱</span> Currency Converter</h1>
         <div class="input-group">
-            <input type="number" id="amount" placeholder="1" min="1">
-            <select id="fromCurrency"></select>
-            <span>to</span>
-            <select id="toCurrency"></select>
+            <input type="number" id="amount" placeholder="Enter amount" min="1">
+            <div class="currency-row">
+                <select id="fromCurrency"></select>
+                <button type="button" id="swapBtn" title="Swap" class="swap-btn">⇄</button>
+                <select id="toCurrency"></select>
+            </div>
         </div>
-        <button id="convertBtn">Convert</button>
+        <button id="convertBtn" class="primary-btn">Convert</button>
         <p id="result"></p>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

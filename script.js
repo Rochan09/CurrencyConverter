@@ -24,6 +24,7 @@ const fromCurrency = document.getElementById("fromCurrency");
 const toCurrency = document.getElementById("toCurrency");
 const result = document.getElementById("result");
 const convertBtn = document.getElementById("convertBtn");
+const swapBtn = document.getElementById("swapBtn");
 
 // Fetch and Populate Currencies
 async function loadCurrencies() {
@@ -71,6 +72,15 @@ async function convertCurrency() {
     } catch (error) {
         alert("Error converting currency.");
     }
+}
+
+// Swap currencies
+if (swapBtn) {
+    swapBtn.addEventListener("click", () => {
+        const temp = fromCurrency.value;
+        fromCurrency.value = toCurrency.value;
+        toCurrency.value = temp;
+    });
 }
 
 // Event Listeners
